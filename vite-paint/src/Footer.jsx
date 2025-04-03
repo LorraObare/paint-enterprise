@@ -40,7 +40,7 @@ function Footer() {
 
     return (
         <footer>
-            <h4 className="section-header">Contact Us</h4>
+            <h2 className="section-header">Contact Us</h2>
             <h1 className="heading">Get In Touch</h1>
             <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             
@@ -110,6 +110,7 @@ function Footer() {
                     </article>
                 </div>
             </div>
+    
         </footer>
     );
 }

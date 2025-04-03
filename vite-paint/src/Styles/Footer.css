@@ -94,7 +94,7 @@ input::placeholder{
 }
 
 .submit{
-    background-color: var(--primaryColor);
+    background-color: #f0f0f0;
     border: none;
     color: var(--text-color);
     font-weight: bold;
@@ -112,7 +112,7 @@ input::placeholder{
 
 .mapBg {
     position: absolute;
-    background-color: var(--primaryColor);
+    background-color: #f0f0f0;
     top: 0;
     right: 0;
     width: 200px;
@@ -188,7 +188,7 @@ input::placeholder{
 
 .contact-icon{
     font-size: 2rem;
-    color: var(--primaryColor);
+    color:  black;
     width: 70px;
 }
 
