@@ -1,9 +1,25 @@
+import Hero from './assets/Hero.jpg';  // ✅ Correct Import
+import "./styles/Home.css"; // ✅ Correct Import
+
+
+
 function Home() {
     return (
-      <div>
-        <h1>Welcome to Paint Enterprise</h1>
-        <p>Explore our products and services.</p>
+      <header class="section__container header__container" id="home">
+      <div class="header__image">
+      <img src={Hero} alt="hero" />
       </div>
+      <div class="header__content">
+        <div>
+          <h1>Transforming Spaces with Professional Painting Solutions</h1>
+          <p>
+            We will help you to make an elegant and luxurious interior designed
+            by professional interior designer.
+          </p>
+        </div>
+      </div>
+    </header>
+
     );
   }
   
