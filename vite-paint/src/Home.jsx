@@ -11,7 +11,7 @@ function Home() {
       </div>
       <div class="header__content">
         <div>
-          <h1>Transforming Spaces with Professional Painting Solutions</h1>
+          <h1>Transforming Spaces with <br /> Professional Painting Solutions</h1>
           <p>
             We will help you to make an elegant and luxurious interior designed
             by professional interior designer.
