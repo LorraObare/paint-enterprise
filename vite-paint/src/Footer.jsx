@@ -2,6 +2,7 @@ import './Styles/Footer.css';
 import React, { useState } from 'react';
 
 function Footer() {
+    
     const [formStatus, setFormStatus] = useState("");
 
     const onSubmit = async (event) => {
@@ -37,6 +38,9 @@ function Footer() {
             setFormStatus("error");
         }
     };
+
+    // Get current year dynamically for copyright
+    const currentYear = new Date().getFullYear();
 
     return (
         <footer>
@@ -110,7 +114,11 @@ function Footer() {
                     </article>
                 </div>
             </div>
-    
+            
+            {/* Copyright section */}
+            <div className="copyright">
+                <p>&copy; {currentYear} All Rights Reserved</p>
+            </div>
         </footer>
     );
 }
