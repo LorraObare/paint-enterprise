@@ -6,6 +6,7 @@ import Products from "./Products.jsx";
 import Portfolio from "./Portfolio.jsx";
 import Contact from "./Contact.jsx";
 import Home from "./Home.jsx";
+import BriefHistory from "./BriefHistory.jsx";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       </section>
       <section id="portfolio">
         <Portfolio />
-      </section>
+       </section>
+      <BriefHistory />
       <section id="contact">
         <Contact />
       </section>

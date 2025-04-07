@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styles/Contact.css';
 import { FaPhone, FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { HashLink } from 'react-router-hash-link';
 
 function Contact(){
     return (
@@ -45,8 +46,11 @@ function Contact(){
           </div>
           
           <div className="contact-cta">
-            <a href="#footer-form" className="cta-button">Send us a message</a>
-          </div>
+          <HashLink smooth to="/#footer" className="cta-button">
+          Send us a message
+         </HashLink>
+        </div>
+
         </div>
       </div>
     </section>
