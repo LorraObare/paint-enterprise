@@ -8,13 +8,10 @@ function BriefHistory(){
         <div className="history-content">
           <div className="history-text">
             <p>
-              Founded in 2010, our company began with a simple vision: to create exceptional experiences that inspire and engage. 
-              What started as a small team of three passionate individuals has grown into a thriving creative agency with over 
-              50 talented professionals.
+              Established in 2019, Gemasu has grown to a company with an annual turnover of 7million Kenya Shillings and now produces 5000 Litres of paint per month. Having established the Kenyan Home market, focus has spread to take on entire Kisumu County and entire Western Kenya.
             </p>
             <p>
-              Throughout our journey, we've partnered with clients across industries, from emerging startups to established 
-              global brands. Our commitment to excellence and innovation has earned us recognition and trust in the market.
+              Gemasu is not only in Decorative Paints, Automative Paints are in the portfolio under world & regional leading brands via PPG- Nexa Autocolour and Plascon South Africa. The Gemasu Automative division also manufacture under the brand Duco to bring rapid technology improvements, Gemasu has sought and obtained international brand partnerships for product lines which provide solutions such as Flowcrete UK for flooring.
             </p>
             <p>
               Today, we continue to push boundaries and explore new horizons, always staying true to our founding principles 
@@ -24,20 +21,20 @@ function BriefHistory(){
           </div>
           <div className="history-milestones">
             <div className="milestone">
-              <span className="year">2010</span>
+              <span className="year">2019</span>
               <span className="event">Company founded</span>
             </div>
             <div className="milestone">
-              <span className="year">2013</span>
-              <span className="event">First major client partnership</span>
+              <span className="year">2020</span>
+              <span className="event">Began manufacturing products</span>
             </div>
             <div className="milestone">
-              <span className="year">2016</span>
+              <span className="year">2020</span>
               <span className="event">Expanded to international markets</span>
             </div>
             <div className="milestone">
-              <span className="year">2019</span>
-              <span className="event">Received industry recognition award</span>
+              <span className="year">2021</span>
+              <span className="event">Received industry recognition</span>
             </div>
             <div className="milestone">
               <span className="year">2022</span>

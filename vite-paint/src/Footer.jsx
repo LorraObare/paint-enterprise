@@ -46,7 +46,7 @@ function Footer() {
         <footer>
             <h2 className="section-header">Contact Us</h2>
             <h1 className="heading">Get In Touch</h1>
-            <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p className="paragraph"></p>
             
             <div className="footer-form">
                 <form onSubmit={onSubmit}>
@@ -94,30 +94,30 @@ function Footer() {
                     <i className="fa fa-map-marker contact-icon" aria-hidden="true"></i>
                     <article className="text">
                         <h1 className="sub-heading">Location</h1>
-                        <p className="paragraph">Lorem ipsum dolor sit amet</p>
+                        <p className="paragraph">Harleys Building,2nd Floor,Oginga Odinga Street, Kisumu</p>
                     </article>
                 </div>
                 
                 <div className="method">
                     <i className="fa fa-envelope contact-icon" aria-hidden="true"></i>
                     <article className="text">
-                        <h1 className="sub-heading">Location</h1>
-                        <p className="paragraph">info@gmail.com</p>
+                        <h1 className="sub-heading">Email</h1>
+                        <p className="paragraph">gemasupainters@gmail.com</p>
                     </article>
                 </div>
                 
                 <div className="method">
                     <i className="fa fa-phone contact-icon" aria-hidden="true"></i>
                     <article className="text">
-                        <h1 className="sub-heading">Location</h1>
-                        <p className="paragraph">Phone</p>
+                        <h1 className="sub-heading">Phone</h1>
+                        <p className="paragraph">+254-786-461-349/ 0715268011</p>
                     </article>
                 </div>
             </div>
             
             {/* Copyright section */}
             <div className="copyright">
-                <p>&copy; {currentYear} All Rights Reserved</p>
+                <p>&copy; {currentYear} All Rights Reserved | Gemasu | Leading Experts</p>
             </div>
         </footer>
     );
