@@ -10,6 +10,7 @@ function About() {
   style={{
     backgroundImage: `url(${about})`
   }}
+  
 >
 </div>
       <div className="about__content">
@@ -17,9 +18,7 @@ function About() {
         <p>
             At Gemasu,we do not just sell paint or offer painting services—we create an experience. <br />From premium, long-lasting paints to expert craftsmanship, we ensure vibrant, flawless finishes that transform your space. <br />Whether you’re a homeowner, business, or contractor, we provide the best products and services to bring your vision to life. <br />Let us help you create a beautiful, lasting impression.
         </p>
-        <div className="about__btn">
-          <button className="btn">View Our Work</button>
-        </div>
+        
       </div>
       <div className="about__stats">
         <div>
