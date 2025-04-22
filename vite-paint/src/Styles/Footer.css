@@ -2,17 +2,17 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    --BodyBg: #303481;
-    --formBg:#343F48;
-    --textColor: #fff;
-    --primaryColor: #0076A3;
+    --BodyBg: #FFFFFF;
+    --formBg: #F0F5FF;  /* Light blue background for form section */
+    --textColor: #333333;
+    --primaryColor: #2A5F5E;  /* Teal/green from your headline */
+    --secondaryColor: #0A3160;  /* Navy blue from logo */
+    --accentColor: #FFC107;  /* Yellow accent from logo */
     --paraColor: #5e6c79;
     --paracolor: #74828f;
-   
 }
 
-
-body{
+body {
     color: var(--text-color);
     background-color: var(--background-color);
     padding-bottom: 5em;
@@ -20,7 +20,6 @@ body{
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
-
 }
 
 footer {
@@ -34,21 +33,25 @@ footer {
     overflow-x: hidden; /* Prevent footer overflow */
 }
 
-.section-header{
-   text-transform: capitalize;
-   font-weight: bold;
-   font-size: 1.1rem;
-   color: var(--primaryColor);
-   margin-bottom: .5em;
-
+.section-header {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--secondaryColor);  /* Changed to navy blue */
+    margin-bottom: .5em;
 }
 
-.heading.paragraph{
+.heading {
+    color: var(--primaryColor);  /* Teal/green for main headings */
+    margin-bottom: 0.5em;
+}
+
+.heading.paragraph {
     margin-bottom: 5em;
     font-weight: bold;
 }
 
-.paragraph{
+.paragraph {
     color: var(--paraColor);
     font-size: 1.1rem;
     line-height: 1.5em;
@@ -57,49 +60,74 @@ footer {
 }
 
 @media screen and (min-width:800px) {
-    footer{
+    footer {
         max-width: 1100px;
     }
-    
 }
-.paragraph2{
+
+.paragraph2 {
     text-align: left;
     word-wrap: break-word; /* Ensure long text wraps */
+    color: var(--paraColor);
 }
 
+/* Contact form section styling */
+form {
+    background-color: var(--formBg);  /* Light blue background */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+}
 
+.sub-heading {
+    text-align: left;
+    color: var(--secondaryColor);  /* Navy blue for sub-headings */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 
-.input{
+.input {
     width: 100%;
     max-width: 700px;
     border: none;
-     box-sizing: border-box; /* Very important - includes padding in width calculation */
+    box-sizing: border-box;
     font-size: .9rem;
     padding: 1em;
     outline: none;
     margin-bottom: 1em;
     color: black;
     border-radius: 10px;
-    border: 1px solid rgb(53, 53, 53);
-
+    border: 1px solid var(--primaryColor);  /* Changed to teal/green */
+    transition: all 0.3s ease;  /* Smooth transition for all changes */
 }
 
-.input:focus{
-    border: 1px solid var(--primaryColor);
-   
+.input:focus {
+    border: 2px solid var(--secondaryColor);  /* Navy blue border on focus */
+    box-shadow: 0 0 5px rgba(10, 49, 96, 0.2);  /* Subtle navy blue shadow */
 }
 
-input::placeholder{
+input::placeholder, textarea::placeholder {
     text-transform: capitalize;
+    color: #6C757D;  /* Light grey for placeholder text */
 }
 
-.submit{
-    background-color: black;
+.submit {
+    background-color: var(--secondaryColor);  /* Navy blue button */
     border: none;
     color: white;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.submit:hover {
+    background-color: #0D4285;  /* Slightly lighter navy blue on hover */
+}
+
+.submit:disabled {
+    background-color: #6C757D;  /* Grey when disabled/submitting */
+    cursor: not-allowed;
 }
 
 .map-container {
@@ -112,7 +140,7 @@ input::placeholder{
 
 .mapBg {
     position: absolute;
-    background-color: #f0f0f0;
+    background-color: var(--formBg);  /* Matching the form background */
     top: 0;
     right: 0;
     width: 200px;
@@ -128,11 +156,7 @@ input::placeholder{
     z-index: 2; /* Higher z-index than mapBg */
     overflow: hidden; /* Contain the iframe */
     border-radius: 10px;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
+    border: 1px solid var(--primaryColor);  /* Teal border around map */
 }
 
 /* Fix footer-form to be responsive */
@@ -143,7 +167,6 @@ input::placeholder{
     margin-top: 2em;
     width: 100%;
 }
-
 
 /* Add a media query for larger screens */
 @media screen and (min-width: 992px) {
@@ -160,18 +183,6 @@ input::placeholder{
     }
 }
 
-
-.sub-heading{
-    text-align: left;
-}
-
-.footer-form{
-    display: flex;
-    gap: 3em;
-    margin-top: 3em;
-
-}
-
 .contactMethod {
     display: flex;
     flex-direction: column; /* Stack on mobile */
@@ -180,15 +191,22 @@ input::placeholder{
     gap: 1.5em; /* Add spacing between stacked items */
 }
 
-.method{
+.method {
     display: flex;
     align-items: center;
-
+    padding: 1em;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.contact-icon{
+.method:hover {
+    transform: translateY(-5px);
+    background-color: var(--formBg);  /* Light blue background on hover */
+}
+
+.contact-icon {
     font-size: 2rem;
-    color:  black;
+    color: var(--primaryColor);  /* Changed to teal */
     width: 70px;
 }
 
@@ -211,6 +229,7 @@ input::placeholder{
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+    border-left: 4px solid #28a745;  /* Green accent for success */
 }
 
 .form-error {
@@ -219,6 +238,7 @@ input::placeholder{
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+    border-left: 4px solid #dc3545;  /* Red accent for error */
 }
 
 /* Copyright styles */
@@ -227,10 +247,10 @@ input::placeholder{
     padding: 20px 0;
     margin-top: 30px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .copyright p {
+.copyright p {
     font-size: 14px;
-    color: #666;
+    color: var(--paraColor);
     margin: 0;
-  }
+}
