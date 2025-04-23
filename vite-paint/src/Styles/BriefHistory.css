@@ -1,126 +1,166 @@
 .history-section {
-    padding: 70px 0;
-    background-color: white;
+  padding: 70px 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.history-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  position: relative;
+}
+
+.history-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #4285f4;
+}
+
+.history-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.history-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  border: 1px solid #eaeaea;
+  filter: brightness(1.05) contrast(1.05);
+}
+
+.history-image img:hover {
+  transform: scale(1.02);
+}
+
+.history-text-timeline {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.history-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.history-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #555;
+  font-size: 16px;
+}
+
+.history-milestones {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.history-milestones:before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.milestone {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 30px;
+}
+
+.milestone:before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #4285f4;
+  z-index: 1;
+}
+
+.milestone .year {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.milestone .event {
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .history-content {
+    flex-direction: column;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  .history-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .history-text-timeline {
+    flex-direction: column;
+  }
+  
+  .history-section {
+    padding: 50px 0;
   }
   
   .history-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 32px;
-    position: relative;
+    margin-bottom: 40px;
   }
-  
-  .history-section h2:after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #4285f4;
-  }
-  
-  .history-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  
-  .history-text {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .history-text p {
-    margin-bottom: 20px;
-    line-height: 1.7;
-    color: #555;
-    font-size: 16px;
-  }
-  
-  .history-milestones {
-    flex: 1;
-    min-width: 300px;
-    position: relative;
-  }
-  
-  .history-milestones:before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: #e0e0e0;
+}
+
+@media (max-width: 480px) {
+  .history-section h2 {
+    font-size: 28px;
   }
   
   .milestone {
-    position: relative;
-    padding-left: 70px;
-    margin-bottom: 30px;
+    padding-left: 50px;
+  }
+  
+  .history-milestones:before {
+    left: 20px;
   }
   
   .milestone:before {
-    content: '';
-    position: absolute;
-    left: 24px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #4285f4;
-    z-index: 1;
+    left: 14px;
   }
-  
-  .milestone .year {
-    display: block;
-    font-weight: bold;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .milestone .event {
-    color: #555;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .history-content {
-      flex-direction: column;
-    }
-    
-    .history-section {
-      padding: 50px 0;
-    }
-    
-    .history-section h2 {
-      margin-bottom: 40px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .history-section h2 {
-      font-size: 28px;
-    }
-    
-    .milestone {
-      padding-left: 50px;
-    }
-    
-    .history-milestones:before {
-      left: 20px;
-    }
-    
-    .milestone:before {
-      left: 14px;
-    }
-  }
+}
