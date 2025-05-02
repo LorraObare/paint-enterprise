@@ -10,7 +10,7 @@ function Footer() {
         setFormStatus("submitting");
         
         const formData = new FormData(event.target);
-        formData.append("access_key", "b767a5e8-b38b-4d37-94bb-584d17b73509");
+        formData.append("access_key", "16704475-7b27-464f-a3c9-ee06ced3ee3e");
         
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
