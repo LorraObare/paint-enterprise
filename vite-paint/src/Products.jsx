@@ -64,7 +64,7 @@ function Products() {
       <h3 className="Title">Our Range Of Products</h3>
       
       <div className="product-intro">
-        At Gemasu Painters, we offer a complete range of high-quality paints and finishes for all your needs. 
+        When you visit our shop located in Kisumu, we offer you a complete range of high-quality paints and finishes for all your needs. 
         Our premium products ensure exceptional coverage, durability, and beautiful finishes for both interior 
         and exterior surfaces. With our diverse selection, you'll find the perfect solution for any painting project, 
         from residential to commercial applications.
