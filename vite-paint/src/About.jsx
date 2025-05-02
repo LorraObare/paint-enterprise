@@ -1,5 +1,6 @@
 import "./Styles/About.css"; 
-import about from './assets/about.jpg';  
+import about from './assets/about.jpg'; 
+import Counter from "./Counter.jsx"; 
 
 function About() {   
   return (     
@@ -17,20 +18,12 @@ function About() {
         Choose Gemasu for reliable, affordable, and professional painting services in Kisumu—and make a lasting impression today.
         </p>                
       </div>       
-      <div className="about__stats">         
-        <div>           
-          <h4>600+</h4>           
-          <p>Homes Transformed</p>         
-        </div>         
-        <div>           
-          <h4>500+</h4>           
-          <p>Happy Clients</p>         
-        </div>         
-        <div>           
-          <h4>10+</h4>           
-          <p>Years of Experience</p>         
-        </div>       
-      </div>     
+      <div className="about__stats">
+  <Counter target={600} label="Homes Transformed" />
+  <Counter target={500} label="Happy Clients" />
+  <Counter target={10} label="Years of Experience" />
+</div>
+
     </section>    
   ); 
 }    
