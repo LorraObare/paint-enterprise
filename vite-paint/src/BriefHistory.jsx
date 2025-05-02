@@ -33,7 +33,7 @@ function BriefHistory(){
                   </div>
                   <div className="milestone">
                     <span className="year">2020</span>
-                    <span className="event">Expanded to international markets</span>
+                    <span className="event">Expanded to western regional markets</span>
                   </div>
                   <div className="milestone">
                     <span className="year">2021</span>
