@@ -11,10 +11,9 @@ function Home() {
       </div>
       <div class="header__content">
         <div>
-          <h1>Transforming Spaces with <br /> Professional Painting Solutions</h1>
+          <h1>Professional Painting Services in Kisumu | Gemasu Painters</h1>
           <p>
-            We will help you to make an elegant and luxurious interior designed
-            by professional interior designer.
+          Gemasu Painters offers expert painting services in Kisumu for homes, offices, and commercial buildings. <br/> From premium paint to flawless finishes, we help you transform your space with style and precision.
           </p>
         </div>
       </div>
