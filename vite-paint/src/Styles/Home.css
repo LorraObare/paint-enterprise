@@ -102,17 +102,10 @@ img {
   animation: slideFadeIn 1s ease-out forwards;
 }
 
-/* Title styling */
-.main-title {
-  display: block;
-}
-
 /* Brand name span */
 .brand-name {
-  display: block;
   white-space: nowrap;
   color: #254d4d;
-  margin-top: 0.5rem;
 }
 
 /* ========== MOBILE STYLING ========== */
@@ -138,16 +131,10 @@ img {
     margin-bottom: 0.5rem;
   }
   
-  .main-title {
-    filter: blur(1.5px);
-    color: rgba(37, 77, 77, 0.7);
-  }
-  
   .brand-name {
-    filter: none;
+    display: block;
     margin-top: 0.25rem;
     font-size: 1.6rem;
-    color: #254d4d;
   }
   
   .header__content p {
