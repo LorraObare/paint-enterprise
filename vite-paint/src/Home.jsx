@@ -14,15 +14,15 @@ function Home() {
       },
       { threshold: 0.6 }
     );
-
+    
     const elements = document.querySelectorAll(".animate-on-scroll");
     elements.forEach(el => observer.observe(el));
-
+    
     return () => {
       elements.forEach(el => observer.unobserve(el));
     };
   }, []);
-
+  
   return (
     <header className="section__container header__container" id="home">
       <div className="header__image">
@@ -30,10 +30,11 @@ function Home() {
       </div>
       <div className="header__content">
         <div>
-          <h1 className="animate-on-scroll">
-            Professional Painting Services in Kisumu | Gemasu Painters
+          <h1 className="hero-title animate-on-scroll">
+            <span className="main-title">Professional Painting Services in Kisumu</span>
+            <span className="brand-name">Gemasu Painters</span>
           </h1>
-          <p>
+          <p className="hero-description">
             Gemasu Painters offers expert painting services in Kisumu for homes,
             offices, and commercial buildings. <br />
             From premium paint to flawless finishes, we help you transform your
