@@ -1,11 +1,12 @@
 import { useState } from "react";
-import "./styles/Products.css";
-import plasticEmulsion from "./assets/plasticEmulsion.jpg";
-import primer from "./assets/primer.jpg";
-import coverMatt from "./assets/coverMatt.jpg";
-import silkVinyl from "./assets/silkVinyl.jpg";
-import ecoGloss from "./assets/ecoGloss.jpg";
-import texturePaint from "./assets/texturePaint.jpg"
+import "../styles/Products.css";
+import plasticEmulsion from "../assets/plasticEmulsion.jpg";
+import primer from "../assets/primer.jpg";
+import coverMatt from "../assets/coverMatt.jpg";
+import silkVinyl from "../assets/silkVinyl.jpg";
+import ecoGloss from "../assets/ecoGloss.jpg";
+import texturePaint from "../assets/texturePaint.jpg"
+
 // Import other images or use placeholders
 
 function Products() {
@@ -22,6 +23,17 @@ function Products() {
     setSelectedImage(null);
 
   };
+
+  const categories = [
+    'Decorative Paints',
+    'Automotive Paints',
+    'Industrial Paints',
+    'Intermediate Products',
+    'Road Marking Paints',
+    'Thinners',
+    'Adhesives'
+  ];
+const [activeCategory, setActiveCategory] = useState(categories[0]);
   
   // Product data - replace placeholders with your actual images when available
   const products = [
@@ -60,6 +72,8 @@ function Products() {
   ];
   
   return (
+
+    
     <div className="container">
       <h3 className="Title">Our Range Of Products</h3>
       
@@ -68,8 +82,20 @@ function Products() {
         Our premium products ensure exceptional coverage, durability, and beautiful finishes for both interior 
         and exterior surfaces. With our diverse selection, you'll find the perfect solution for any painting project, 
         from residential to commercial applications.
+<div className="product-categories-unique">
+        {categories.map(cat => (
+          <button
+            key={cat}
+            className={`category-pill${activeCategory === cat ? ' active' : ''}`}
+            onClick={() => setActiveCategory(cat)}
+            type="button"
+          >
+            {cat}
+            {activeCategory === cat && <span className="pill-underline"></span>}
+          </button>
+        ))}
       </div>
-      
+      </div>
       <div className="product-container">
         {products.map((product, index) => (
           <div

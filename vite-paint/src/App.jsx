@@ -1,15 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import About from "./components/About.jsx";
+import Services from "./components/Services.jsx";
+import Home from "./components/Home.jsx";
+import BriefHistory from "./components/BriefHistory.jsx";
+import Products from "./components/Products.jsx";
+import Gallery from "./components/Gallery.jsx";
+import Contact from "./components/Contact.jsx";
 
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
-import About from "./About.jsx";
-import Services from "./Services.jsx";
-import Products from "./Products.jsx";
-import Portfolio from "./Portfolio.jsx";
-import Contact from "./Contact.jsx";
-import Home from "./Home.jsx";
-import BriefHistory from "./BriefHistory.jsx";
+import ProductsPage from "./pages/ProductsPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
-function App() {
+function MainPage() {
   return (
     <>
       <Header />
@@ -22,18 +26,24 @@ function App() {
       <section id="services">
         <Services />
       </section>
-      <section id="products">
-        <Products />
-      </section>
-      <section id="portfolio">
-        <Portfolio />
-       </section>
       <BriefHistory />
-      <section id="contact">
-        <Contact />
-      </section>
-    <Footer />
+      <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/products" element={<ProductsPage />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+      <Route path="/contact" element={<ContactPage/>} />
+      
+      <Route path="about" element={< MainPage />} />
+      <Route path="services" element={< Services />} />
+
+    </Routes>
   );
 }
 

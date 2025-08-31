@@ -1,6 +1,6 @@
 import { useEffect } from "react"; 
-import Hero from './assets/Hero.jpg'; 
-import "./styles/Home.css";  
+import Hero from '../assets/Hero.jpg'; 
+import "../styles/Home.css";  
 
 function Home() {   
   useEffect(() => {const observer = new IntersectionObserver(       

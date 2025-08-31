@@ -1,5 +1,5 @@
-import './Styles/BriefHistory.css';
-import companyImage from './assets/companyImage.jpg';
+import '../Styles/BriefHistory.css';
+import companyImage from '../assets/companyImage.jpg';
 
 function BriefHistory(){
     return(

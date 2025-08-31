@@ -1,5 +1,5 @@
-import "./Styles/About.css"; 
-import about from './assets/about.jpg'; 
+import "../Styles/About.css"; 
+import about from '../assets/about.jpg'; 
 import Counter from "./Counter.jsx"; 
 
 function About() {   

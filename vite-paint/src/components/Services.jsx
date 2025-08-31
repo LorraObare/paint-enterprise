@@ -1,7 +1,7 @@
-import "./styles/Services.css";
-import brush from "./assets/brush.svg"; // Corrected import statement
-import Manufacture from "./assets/manufacture.svg"; // Corrected import statement
-import sell from "./assets/sell icon.svg"; // Corrected import statement
+import "../styles/Services.css";
+import brush from "../assets/brush.svg"; // Corrected import statement
+import Manufacture from "../assets/manufacture.svg"; // Corrected import statement
+import sell from "../assets/sell icon.svg"; // Corrected import statement
 
 function Services() {
   return (

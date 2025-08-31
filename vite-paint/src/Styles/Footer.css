@@ -184,7 +184,7 @@ input::placeholder, textarea::placeholder {
     flex-direction: column; /* Stack on mobile */
     margin-top: 2em;
     text-align: left;
-    gap: 1.5em; /* Add spacing between stacked items */
+    gap: 1em; /* Add spacing between stacked items */
 }
 
 .method {
@@ -238,11 +238,159 @@ input::placeholder, textarea::placeholder {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);  /* Light white border for separator */
-    color: white;  /* White text for copyright on blue background */
+    border-top: 5px black;
+    color: black; 
 }
   
 .copyright p {
     font-size: 14px;
     margin: 0;
+}
+
+/* New footer styles */
+.new-footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+}
+
+/* Map Section */
+.footer-map {
+    grid-column: 1 / -1;   /* Span across all columns */
+    width: 100%;
+    margin-top: 20px;      /* Add spacing from sections above */
+}
+
+.footer-map h3 {
+    color: #4285F4;
+    margin-bottom: 20px;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 350px;         /* Adjust height to your liking */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Quick Links Section */
+.footer-links h3 {
+    color: #4285F4;
+    margin-bottom: 20px;
+}
+
+.links-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4285F4;
+}
+
+/* Connect With Us Section */
+.footer-connect h3 {
+    color: #4285F4;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    margin-bottom: 20px;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribe-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #3367D6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4285F4;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .links-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .links-columns {
+        grid-template-columns: 1fr;
+    }
 }
