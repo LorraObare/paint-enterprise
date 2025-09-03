@@ -20,8 +20,8 @@ function Home() {
     </div>       
     <div className="header__content">         
       <div>         
-        <h1 className="hero__title animate-on-scroll">Professional Painting Services in Kisumu<span className="brand-name">Gemasu Painters</span></h1> 
-        <p className="hero__description">Gemasu Painters offers expert painting services in Kisumu for homes, offices, and commercial buildings. <br />   From premium paint to flawless finishes, we help you transform your   space with style and precision. </p>          
+        <h1 className="hero__title animate-on-scroll">Professional Painting Services<span className="brand-name"> Gemasu Paint</span></h1> 
+        <p className="hero__description">Gemasu Paint offers expert painting services for homes, offices, and commercial buildings. <br />   From premium paint to flawless finishes, we help you transform your   space with style and precision. </p>          
         </div>       
         </div>     
         </header>   

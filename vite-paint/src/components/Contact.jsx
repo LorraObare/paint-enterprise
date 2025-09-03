@@ -48,12 +48,9 @@ function Contact() {
           </div>
           
           <div className="social-container">
-            <h4>Connect with us</h4>
+            <h4>Connect with us on</h4>
             <div className="social-icons">
               <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
-              <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
-              <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedin /></a>
             </div>
           </div>
 

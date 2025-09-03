@@ -25,13 +25,14 @@ function Products() {
   };
 
   const categories = [
-    'Decorative Paints',
-    'Automotive Paints',
-    'Industrial Paints',
-    'Intermediate Products',
-    'Road Marking Paints',
-    'Thinners',
-    'Adhesives'
+    'Plastic Emulsion',
+    'Cover Matt',
+    'Vinyl Matt',
+    'Silk Vinyl',
+    'Weather Guard',
+    'Gloss-Economy',
+    'Super Gloss',
+    'Texture Paint',
   ];
 const [activeCategory, setActiveCategory] = useState(categories[0]);
   

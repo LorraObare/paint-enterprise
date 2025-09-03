@@ -29,7 +29,7 @@ function Header () {
             <li>
         <HashLink smooth to="/#home">
         <FaHome style={{ marginRight: "6px", verticalAlign: "middle" }} />
-         HOME
+         Home
         </HashLink>
             </li>
             <li>

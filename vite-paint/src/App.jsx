@@ -13,6 +13,8 @@ import ProductsPage from "./pages/ProductsPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 
+
+
 function MainPage() {
   return (
     <>
