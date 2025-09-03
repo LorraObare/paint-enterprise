@@ -39,7 +39,7 @@ function Contact() {
           <div className="contact-info">
             <div className="contact-item">
               <FaPhone />
-              <span>+254-786-461-349</span>
+              <span>+254-715-268-011/ 0718677664</span>
             </div>
             <div className="contact-item">
               <FaEnvelope />
