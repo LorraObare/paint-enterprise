@@ -43,7 +43,7 @@ function Contact() {
             </div>
             <div className="contact-item">
               <FaEnvelope />
-              <span>gemasupainters@gmail.com</span>
+              <span>support@gemasupaint.co.ke</span>
             </div>
           </div>
           
