@@ -16,13 +16,39 @@ function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    // You can add your form submission logic here (e.g., API call)
-    setStatus('Thank you for contacting us!');
-    setForm({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setStatus(''), 4000);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const data = {
+    access_key: "d0567931-963a-4263-9b12-4b8e2b0f373d",
+    name: form.name,
+    email: form.email,
+    subject: form.subject,
+    message: form.message,
   };
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setStatus("✅ Message sent successfully!");
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } else {
+      setStatus("❌ Failed to send. Try again later.");
+    }
+  } catch (error) {
+    setStatus("⚠️ Error sending message.");
+  }
+
+  setTimeout(() => setStatus(""), 4000);
+};
+
 
   return (
     <section className="contact-section">
