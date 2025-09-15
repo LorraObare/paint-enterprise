@@ -19,24 +19,16 @@ function Contact() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
-  const data = {
-    access_key: "d0567931-963a-4263-9b12-4b8e2b0f373d",
-    name: form.name,
-    email: form.email,
-    subject: form.subject,
-    message: form.message,
-  };
-
   try {
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://gemasupaint.co.ke/contact.php", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(form),
     });
 
-    const result = await response.json();
+    const result = await response.text(); // <-- expect text, not JSON
 
-    if (result.success) {
+    if (result.includes("successfully")) {
       setStatus("✅ Message sent successfully!");
       setForm({ name: "", email: "", subject: "", message: "" });
     } else {
@@ -48,6 +40,7 @@ function Contact() {
 
   setTimeout(() => setStatus(""), 4000);
 };
+
 
 
   return (

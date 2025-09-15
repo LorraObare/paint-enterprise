@@ -47,7 +47,7 @@ function Footer() {
           <h3>FIND US</h3>
           <div className="map-wrapper">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.451107605135!2d34.7510742!3d-0.10075689999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa4ed38900001%3A0xdf21398077243cc0!2sHarleys%20Building!5e1!3m2!1sen!2ske!4v1743597584515!5m2!1sen!2ske" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.452872150089!2d34.76652077178822!3d-0.08287113528554416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa47706357fbf%3A0x2d47fbd6d59ecb90!2sGemasu%20Paints!5e1!3m2!1sen!2ske!4v1757931641030!5m2!1sen!2ske" width="600" height="450" 
               style={{border: 0}} 
               allowFullScreen="" 
               loading="lazy" 
@@ -68,7 +68,7 @@ function Footer() {
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', lineHeight: '1.6' }}>
-              Harleys Building, 2nd Floor, Oginga Odinga Street, Kisumu, Kenya
+              Kondele Flyover, Kisumu, Kenya
             </p>
           </div>
         </div>
