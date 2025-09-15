@@ -35,6 +35,14 @@ import image29 from '../assets/image29.jpg';
 import image30 from '../assets/image30.jpg';
 import image31 from '../assets/image31.jpg';
 import image32 from '../assets/image32.jpg';
+import image33 from '../assets/image33.jpg';
+import image34 from '../assets/image34.jpg';
+import image35 from '../assets/image35.jpg';
+import image36 from '../assets/image36.jpg';
+import image38 from '../assets/image38.jpg';
+import image40 from '../assets/image40.jpg';
+import image41 from '../assets/image41.jpg';
+import image42 from '../assets/image42.jpg';
 
 // ...up to image40
 
@@ -46,7 +54,7 @@ const Portfolio = () => {
   // Array of imported images - add all your images here (up to 40)
   const images = [
     image1, image2, image3, image4, image5, image6, 
-    image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32,
+    image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image38, image40, image41, image42
     // Add more images as needed (up to image40)
   ];
 
